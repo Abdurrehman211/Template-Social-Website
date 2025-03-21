@@ -7,7 +7,7 @@ import './Landing.css';
 export default function Footer() {
     return (
         <>
-        <footer className="Footer">
+        <footer className="Footer" style={{background: '#20b541'}}>
                 <div className="main32">
                     <div className="row" id="row50">
                         <div className="col-lg-12 col-md-12 col-sm-12" id="col12">
@@ -23,8 +23,9 @@ export default function Footer() {
                         </div>
                     </div>
                     <br />
-                    <div className="row">
+                    <div className="row ">
                         <div className="col-lg-12 col-md-12 col-sm-12" id="col12">
+                
                             <div className="social-links">
                                 <a href="/"><img src={insta} alt='socials' id="img-s" /></a>
                                 <a href="/"><img src={Facebook} alt='socials' id="img-s" /></a>
@@ -35,8 +36,9 @@ export default function Footer() {
                     </div>
                     <div className="row" id="row21">
                         <div className="col-lg-12 col-md-12 col-sm-12" id="col12">
-                            <h1 className="Last">MARKET BRAINS</h1>
+                            <h1 className="Last">TRIO DEVELOPERS</h1>
                         </div>
+                        
                     </div>
 
                 </div>

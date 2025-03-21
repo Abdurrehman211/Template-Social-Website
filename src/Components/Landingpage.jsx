@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Landing.css';
 import Arrow from './images/arrow.gif';
@@ -15,7 +15,9 @@ import Half from './images/halfcircle.png';
 import Testimonial from "./testimonial.jsx";
 import Footer from "./Footer.jsx";
 import Aos from 'aos';
+import { useNavigate } from "react-router-dom";
 import 'aos/dist/aos.css';
+import { FaUsers, FaChalkboardTeacher, FaClock } from "react-icons/fa";
 export default function Landingpage() {
     useEffect(() => {
         Aos.init({
@@ -24,6 +26,9 @@ export default function Landingpage() {
             mirror: true
         });
     },[]);
+
+    const navigate = useNavigate();
+
     // const sliderRef = useRef(null);
 
     // Function to move to the next slide
@@ -53,6 +58,59 @@ export default function Landingpage() {
 const BackToTop = () =>{
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 }
+
+
+const [counts, setCounts] = useState({
+    count1: 0,
+    count2: 0,
+    count3: 0,
+});
+
+const targets = [250, 50, 10000];
+const refs = [useRef(null), useRef(null), useRef(null)];
+const duration = 2000; // 2 seconds
+
+useEffect(() => {
+    refs.forEach((ref, index) => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    let start = 0;
+                    const increment = Math.ceil(targets[index] / (duration / 50));
+
+                    const interval = setInterval(() => {
+                        start += increment;
+                        if (start >= targets[index]) {
+                            setCounts((prevCounts) => ({
+                                ...prevCounts,
+                                [`count${index + 1}`]: targets[index],
+                            }));
+                            clearInterval(interval);
+                        } else {
+                            setCounts((prevCounts) => ({
+                                ...prevCounts,
+                                [`count${index + 1}`]: start,
+                            }));
+                        }
+                    }, 50);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    });
+}, []);
+
+
     return (
         <>
         <button className="Btn" onClick={BackToTop}>
@@ -72,17 +130,20 @@ const BackToTop = () =>{
                     <div className="row"  id="roooow" data-aos="fade-up">
                         <div className="col1 col-lg-4 col-md-4 col-sm 12">
                             <div className="circle">
-                                <span className="text12">M</span>
-                                <span className="text12">A</span>
-                                <span className="text12">R</span>
-                                <span className="text12">K</span>
-                                <span className="text12">E</span>
                                 <span className="text12">T</span>
-                                <span className="text12">B</span>
                                 <span className="text12">R</span>
-                                <span className="text12">A</span>
                                 <span className="text12">I</span>
-                                <span className="text12">N</span>
+                                <span className="text12">O</span>
+                                <span className="text12">D</span>
+                                <span className="text12">E</span>
+                                <span className="text12">V</span>
+                                <span className="text12">E</span>
+                                <span className="text12">L</span>
+                                <span className="text12">O</span>
+                                <span className="text12">P</span>
+                                <span className="text12">E</span>
+                                <span className="text12">R</span>
+                                <span className="text12">S</span>
                             </div>
                             <div className="Story" data-aos="fade-up">
                                 <h3 id="story">Our Story <span id="story1"></span></h3>
@@ -99,17 +160,17 @@ const BackToTop = () =>{
                         </div>
                         <div className="col col-lg-12 col-md-12 col-sm 12" >
                             <div className="button">
-                                <button id="arrow-btn1">Know More <img src={Arrow} alt="Arrow" id="arrow" /></button>
+                                <button id="arrow-btn1" onClick={() => navigate("/about")}>Know More <img src={Arrow} alt="Arrow" id="arrow" /></button>
                             </div>
                         </div>
                         <div className="col2 col-lg-4 col-md-4 col-sm 12" data-aos="fade-up">
                             <div className="text123">
-                                <h1 style={{ fontWeight: "normal", fontSize: "60px" }}>12<span style={{ color: "cornflowerblue" }}>+</span></h1>
+                                <h1 style={{ fontWeight: "normal", fontSize: "60px" }}>4<span style={{ color: "cornflowerblue" }}>+</span></h1>
                                 <p style={{ fontSize: "20px" }}>Years of experience</p>
                                 <h1 style={{ fontWeight: "normal", fontSize: "60px" }}>50<span style={{ color: "cornflowerblue" }}>+</span></h1>
-                                <p style={{ fontSize: "20px" }}>Years of experience</p>
+                                <p style={{ fontSize: "20px" }}>Projects Deliver</p>
                                 <h1 style={{ fontWeight: "normal", fontSize: "60px" }}>100<span style={{ color: "cornflowerblue" }}>+</span></h1>
-                                <p style={{ fontSize: "20px" }}>Years of experience</p>
+                                <p style={{ fontSize: "20px" }}>Satisfied Clients</p>
                             </div>
                         </div>
                     </div>
@@ -137,14 +198,11 @@ const BackToTop = () =>{
                                     Who we are ?
                                 </h1>
                                 <p>
-                                    At Market Brains, we are passionate about blending creativity with strategy to elevate brands. Our team of experts combines innovative design with data-driven insights to deliver exceptional digital solutions tailored to your unique needs.
+                                At Triodevelopers, we are passionate about leveraging technology and innovation to build cutting-edge digital solutions. Our team of experts blends creativity with technical expertise to deliver tailored software and web solutions that drive success.                                </p>
+                                <p>
                                 </p>
                                 <p>
-                                    With a global perspective and local expertise, we bring a fresh approach to every project. Our commitment is to create impactful experiences that drive success and resonate with audiences worldwide.
-                                </p>
-                                <p>
-                                    Driven by innovation and collaboration, we transform ideas into compelling digital experiences that leave a lasting impact.
-                                </p>
+                                With a global outlook and deep industry knowledge, we bring a fresh approach to every project. Our commitment is to craft seamless, impactful experiences that empower businesses and engage users worldwide.                                </p>
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
                                 <div className="Canva">
@@ -167,26 +225,34 @@ const BackToTop = () =>{
                     </div>
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" >
-                            <div className="card mt-5"  data-aos="fade-up">
-                                <img src={Design} alt="design" id="design" data-aos="fade-up" />
+                            <div className="card mt-5" data-hover-text="Boost Your Brand" onClick={()=> {
+                                window.location.href = '/Service'
+                            }} >
+                              <img src={Design} alt="design" id="design"/>
 
                             </div>
                             <p style={{ fontWeight: "bolder", fontSize: "20px", marginTop: "30px" }}>Brand Identity Design</p>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="6000">
-                            <div className="card mt-5">
+                            <div className="card mt-5" data-hover-text="Grow Your Business"  onClick={()=> {
+                                window.location.href = '/Service'
+                            }} >
                                 <img src={marketing} alt="Marketing" id="design" />
                             </div>
                             <p style={{ fontWeight: "bolder", fontSize: "20px", marginTop: "30px" }}>Digital Marketing Strategy</p>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="6000">
-                            <div className="card mt-5">
+                            <div className="card mt-5" data-hover-text="Build Modern Websites"  onClick={()=> {
+                                window.location.href = '/Service'
+                            }} >
                                 <img src={website} alt="website" id="design" />
                             </div>
                             <p style={{ fontWeight: "bolder", fontSize: "19px", marginTop: "30px" }}>Web Design & Development</p>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="5000">
-                            <div className="card mt-5">
+                            <div className="card mt-5" data-hover-text="Manage Content Effectively"  onClick={()=> {
+                                window.location.href = '/Service'
+                            }} >
                                 <img src={content} alt="content" id="design" />
                             </div>
                             <p style={{ fontWeight: "bolder", fontSize: "20px", marginTop: "30px" }}>Content & Management</p>
@@ -210,12 +276,41 @@ const BackToTop = () =>{
                         <div className="col-lg-6 col-md-6 col-sm-12" id='Text1' data-aos="fade-up">
                             <h1>Project We <br /> Have <span style={{ color: 'cornflowerblue' }}>Completed</span></h1>
                             <p id="p">
-                                At Market Brains, we are passionate about blending creativity with strategy to elevate brands. Our team of experts combines innovative design with data-driven insights to deliver exceptional digital solutions tailored to your unique needs.
+                                At Trio Developers, we are passionate about blending creativity with strategy to elevate brands. Our team of experts combines innovative design with data-driven insights to deliver exceptional digital solutions tailored to your unique needs.
                             </p>
                             <p id="p1">
                                 With a global perspective and local expertise, we bring a fresh approach to every project. Our commitment is to create impactful experiences that drive success and resonate with audiences worldwide.
                             </p>
-                            <button id="btn">View All Work</button>
+                            <button id="btn" onClick={() => {
+                                window.location.href='/Service';
+                            }}>View All Work</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="hero-about1">
+                <div className="container ">
+                    <div className="row">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div className="card1" ref={refs[0]}>
+                            <FaUsers className="icon" />
+                                <h2>{counts.count1}+</h2>
+                                <p>Satisfied Clients Served</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div className="card1" ref={refs[1]}>
+                            <FaChalkboardTeacher className="icon" />
+                                <h2>{counts.count2}+</h2>
+                                <p>Projects Delivered</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div className="card1" ref={refs[2]}>
+                            <FaClock className="icon" />
+                                <h2>{counts.count3}+</h2>
+                                <p>Hours of Deserving Creativity</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +320,7 @@ const BackToTop = () =>{
                 <Testimonial />
             </section>
             <br /><br />
-            <footer className="Footer">
+            <footer>
                <Footer/>
             </footer>
         </>

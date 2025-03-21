@@ -12,7 +12,7 @@ const TestimonialCarousel = () => {
     {
         
       quote: "Exceptional service and creative solutions.",
-      name: "Ahmad Zafar",
+      name: "Ethan Parker",
       image: "./images/ahmad.jpg", // Path to the image
     },
     {

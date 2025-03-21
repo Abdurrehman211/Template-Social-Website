@@ -17,6 +17,11 @@
         width: 100%;
         background: #0000008c;
     }
+    #Landing-page .container{
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 #About-col{
     /* width: 50%; */
     color: white;
@@ -94,7 +99,7 @@ margin-top: 5%;
 margin-top: 5%;
 }
 .Team{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 font-size: 40px;
 font-weight: 600;
 line-height: 50px;
@@ -109,7 +114,68 @@ text-align: center;
     top: revert-layer;
     /* margin-top: 200px; */
 }
-
+#About1{
+    height: 100%;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Montserrat';
+}
+#About1 .about-ser{
+border-bottom: 2px solid black;
+}
+#About1 h1{
+    text-align: left;
+    font-size: 40px;
+}
+.values-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .value-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;height: 450px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+  }
+  @media screen and (max-width: 900px) {
+    .value-card{
+        width: 90%;
+    }
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-box {
+    background: linear-gradient(45deg, #00c72e, #00bae0);
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 24px;
+  }
+#About1 h1 span{
+    color: blue;
+    font-size: 45px;
+}
+#About1 p{
+margin-top: 20px;
+padding-left: 10px;
+font-size: 20px;
+text-align: left;
+}
 #sparkle{
     width: 30px;
     height: 30px;

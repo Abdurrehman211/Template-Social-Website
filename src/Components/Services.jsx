@@ -16,14 +16,14 @@ return (
                 <div className="col-12 col-md-12 col-sm-12">
                 <h1 className="h1">Our Services</h1>
                 </div>
-                <div className="col-12 col-md-12 col-sm-12">
+                <div className="col-12 col-md-12 col-sm-12 mb-5">
                 <img src={Image1} alt="main pic " id="main" />
                 </div>
             </div>
          
         </div>
         <div className="footer3210">
-                    <h3>Branding</h3>
+                    <h3>Billing</h3>
                     <img src={Sparkle} alt="sparkle" id="sparkle" />
                     <h3>Development</h3>
                     <img src={Sparkle} alt="sparkle" id="sparkle" />
