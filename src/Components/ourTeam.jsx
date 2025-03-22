@@ -111,11 +111,11 @@ const Team = () => {
       <h1 className="text-center mb-4">Meet Our <span style={{ color: "cornflowerblue" }}>Team</span></h1>
 
       {/* Filter Buttons */}
-      <div className="d-flex justify-content-center mb-4">
+      <div className="d-flex justify-content-center flex-wrap mb-4">
         {["All", "Developer", "Manager", "CEO & Founder", "Billing Handler", "Market Analyst"].map((category) => (
           <button
             key={category}
-            className={`btn mx-2 ${filter === category ? "btn-primary" : "btn-outline-primary"}`}
+            className={`btn mx-2 mb-3 ${filter === category ? "btn-primary" : "btn-outline-primary"}`}
             onClick={() => setFilter(category)}
           >
             {category}

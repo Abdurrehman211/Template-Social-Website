@@ -1,5 +1,5 @@
 .h1{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 font-size: 56px;
 font-weight: 700;
 line-height: 68.26px;
@@ -41,10 +41,14 @@ margin: 50px 20px;
     margin-top: 10%;
     height: 100%;
     width: 100%;
-    display: grid;
-    place-items: center;
-margin: auto auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
     /* background-attachment: fixed; */
+}
+#Service-text .container{
+    margin-top: 0;
 }
 #Service-pic {
     background: url('./images/brand.jpg');
@@ -59,10 +63,12 @@ margin: auto auto;
 
 #Service-Para{
     width: 50%;
-    padding-left: 4%;
+
+    text-align: left;
+    font-family: 'Montserrat';
 }
 #Service-Para p {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 400;
     
@@ -71,7 +77,7 @@ margin: auto auto;
     padding-left: 6%;
 }
 #Service-Para h1{
-    font-family: Montserrat;
+
     padding-bottom:20px ;
     padding-left: 4%;
     font-size: 34px;
@@ -95,7 +101,43 @@ margin: auto auto;
 }
 #Service-Para1{
     width: 50%;
+    text-align: left;
+    font-family: 'Montserrat';
 }
+
+#Service-Para2 button,
+#Service-Para button{
+    margin-left: 6%;
+    margin-top: 20px;
+    width: 150px;
+    background: #20b541;
+    padding: 10px;
+    border: transparent;
+    margin-bottom: 20px;
+
+}
+#Service-Para1 button{
+    width: 150px;
+    background: #20b541;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: transparent;
+}
+
+#Service-Para2 button:hover  ,
+#Service-Para1 button:hover,
+#Service-Para button:hover{
+transform: translateY(5px);
+}
+#Service-Para2 button:active  ,
+#Service-Para1 button:active,
+#Service-Para button:active{
+transform: scale(0.9)  rotate(5deg);
+border: 2px solid black;
+}
+
+
 #Service-Para1 p{
     font-family: Montserrat;
     font-size: 18px;
@@ -125,7 +167,8 @@ margin: auto auto;
 }
 #Service-Para2{
     width: 50%;
-    padding-left: 4%;
+    font-family: 'Montserrat';
+    text-align: left;
 }
 #Service-Para2 p {
     font-family: Montserrat;
@@ -160,7 +203,7 @@ margin: auto auto;
     position: absolute;
     left: 0;
     /* margin-top: -248px; */
-    top: 800px;
+    top: 20%;
 }
 #circle221 {
     margin-right: 63%;
@@ -172,32 +215,19 @@ margin: auto auto;
     position: absolute;
     width: 324px;
 height: 298px;
-top: 1481px;
-left: 1025px;
-gap: 0px;
+top: 65%;
+right: 0%;
 /* opacity: 0px; */
 
 }
 @media screen and (max-width: 786px) {
     
-    #IDK {
-        position: absolute;
-        width: 240px;
-        height: 268px;
-        top: 246%;
-        left: 56%;
-        gap: 0px;
-    }
+   
     #main{
         width: 90%;
         height: 80%;
     }
-    #Cone122 {
-        position: absolute;
-        left: 0;
-        /* margin-top: -248px; */
-        top: 1485px;
-    }
+
     #Service-Para h1 {
         font-family: Montserrat;
         padding-bottom: 20px;
@@ -341,14 +371,7 @@ gap: 0px;
         z-index: 200;
         margin-bottom: 50px;
     }
-    #IDK {
-        position: fixed;
-        width: 150px;
-        height: 150px;
-        top: 1083px;
-        left: 276px;
-        gap: 0px;
-    }
+
     #Service-Para2 {
         width: 100%;
         padding-left: 0%;
