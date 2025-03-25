@@ -129,10 +129,10 @@ return (
     
  
     </section>
-{/*  
+ 
    <section id='Footer'>
     <Footer/>
-   </section> */}
+   </section>
     </>
 )
 }

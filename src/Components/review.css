@@ -1,0 +1,160 @@
+#Review{
+        width: 100%;
+        height: 70vh; /* Adjusted height to 80% of the viewport */ /* Navbar height adjustment */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        text-align: center;
+        background: url("./images/porfolio4.png") no-repeat top center/cover;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+}
+#Review h1{
+    font-size: 50px;
+text-align: left;
+color: aliceblue;
+position: relative;
+z-index: 2;
+}
+#Review .container{
+    margin-left: 0;
+    margin-right: 0;
+}
+#Review2{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+}
+#Review-form{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 3px solid #0d9800;
+}
+#Review-form h1{
+    text-align: left;
+    font-size: 42px;
+    padding: 15px;
+}
+#Review-text {
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Review-text form{ 
+    width: 95%;
+    text-align: left;
+    border: 1px solid #80808066;
+    border-radius:20px ;
+    padding: 20px 5px;
+}
+#Review-text form button{
+margin: 20px 10px ;
+}
+#Review-text form .name{
+    text-align: left;
+    padding: 10px;
+}
+#Review-text form label{
+font-size: 22px;
+margin-bottom: 5px;
+padding: 5px 10px;
+}
+.review-container {
+    position: fixed;
+    display: block;
+    bottom: 35%;
+    width: 200px;
+    transform: translateX(-166px);
+    left: 0;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    padding-left: 5px;
+    border-radius: 10px;
+    background: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.review-container p{
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px 10px;
+    transition: 0.5s ease-in-out;
+}
+.review-container p span{
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+
+  .review-container.open {
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+}
+  /* Floating Button */
+  .review-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .review-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Review Box */
+  .review-box {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-box h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Textarea */
+  .review-box textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Submit Button */
+
+  .star {
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star.selected {
+    color: gold;
+}

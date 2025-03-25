@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
 import OffcanvasExample from './Components/Nav-bar';
 import ProfilePage from './Components/profilePage';
+import Review from './Components/Review';
 function App() {
   return (
     
@@ -23,6 +24,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/profile/:teamMemberId' element={<ProfilePage />} />
+          <Route path='/review/:name' element={<Review />} />
         </Routes>
       </Router>
     </div>

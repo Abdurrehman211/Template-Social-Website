@@ -1,192 +1,38 @@
-.Port-row {
+#Portfolio{
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 472px;
-}
-#Portfolio2, #Portfolio1 {
-    /* aspect-ratio: 3 / 4; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  padding-left: 11px;
-  padding-right:11px;
-  padding-bottom: 11px;
-  padding-top: 0px;
-}
-#Port-col{
-    width: 50%;
-    height: 474px;
-    margin-left: -20px;
-    padding: 0;
-}
-#Port-col1{
-    padding: 0;
-display: flex;
-flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('./images/porfolio2.png') center center no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat';
+    height: 50vh;
 
-}
-#Laptop {
-    height: 46%;
-    object-fit: cover;
-    /* padding-top: 7px; */
-    padding: 9px;
-}
-
-#Portfolio3 {
-    padding-top: 3px;
-    width: 97.5%;
-    height: 220px;
-}
-.Upper-row {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 705px;
-}
-#convert {
-    margin-left: -158px;
-    width: 1604px;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.lower-row {
-    width: 50%;
-    display: flex;
- height: 705px;
-    padding: 0;
-    margin-left: -8px;
-}
-#full {
-    width: 100%;
-    width: 100%;
-    height: 705px;
-    padding-right: 10px;
-}
-#rectangle {
-    width: 300px;
-    height: 29%;
-    object-fit: cover;
-    padding-top: 19px;
-    z-index: 500;
     position: relative;
 }
-#lower{
-    width: 300px;
-    height: 500px;
-    left: 92px;
-    gap: 0px;
-    opacity: 0px;
-    
+#Portfolio .container{
+    margin-left: 0;
+    margin-right: 0;
+
 }
-#Pics{
-    padding-top: 50px;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    z-index: 500;
+#Portfolio h1{
+    text-align: left;
+    font-size: 50px;
+    z-index: 2;
+    position: relative;
+    color: aliceblue;
 }
-#h-circle{
+.wrap{
     position: absolute;
-    margin-top: -40px;
-    right: 0;
-    z-index: 400;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.659);
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-@media screen and (max-width: 786px) {
-    #convert {
-        margin-left: -211px;
-        width: 1000px;
-        height: max-content;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
-    /* .lower-row, */
-    /* .Upper-row {
-        display: flex;
-        /* width: 50%; */
-        /* justify-content: space-between; */
-        /* flex-direction: column;
-        height: 705px; */
-        .lower-row {
-            width: 44%;
-            display: flex;
-            height: 705px;
-            padding: 0;
-            margin-left: -8px;
-        }
-        .Upper-row {
-            display: flex;
-            width: 42%;
-            justify-content: space-between;
-            flex-direction: column;
-            height: 705px;
-        }
-    
-    #icons p {
-        font-size: 10px;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        height: 17px;
-        width: 80px;
-    }
-}
-@media screen and (max-width: 468px) {
-    #convert {
-        /* margin-left: -213px;
-        width: 95%; */
-        height: max-content;
-        display: block;
-        justify-content: center;
-        text-align: center;
-    }
-    .Upper-row {
-        display: flex;
-        width: 90%;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 705px;
-        margin-bottom: 10px;
-    }
-    .lower-row {
-        width: 100%;
-        display: flex;
-        height: 705px;
-        padding: 0;
-        margin-left: -8px;
-    }
-    #Laptop {
-        height: 24%;
-        object-fit: cover;
-        /* padding-top: 7px; */
-        padding: 9px;
-    }
-    #lower {
-        width: 90%;
-        height: 500px;
-        left: 92px;
-        gap: 0px;
-        opacity: 0px;
-    }
-    
-    #rectangle {
-        width: 90%;
-        height: 29%;
-        object-fit: cover;
-        padding-top: 19px;
-        z-index: 500;
-        position: relative;
-    }    
-    #h-circle {
-        position: absolute;
-        margin-top: -40px;
-        right: 0;
-        z-index: 400;
-        width: 150px;
-        height: 190px;
-    }
+.Hero-heading{
+    color: #20b541;
+    font-weight: 600;
 }
