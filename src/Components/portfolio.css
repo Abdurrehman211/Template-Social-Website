@@ -36,3 +36,15 @@
     color: #20b541;
     font-weight: 600;
 }
+#Pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width:786px) {
+    #Pics .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

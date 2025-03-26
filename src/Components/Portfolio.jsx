@@ -95,7 +95,7 @@ function Portfolio(){
                    </div>
                </div>
             </div>
-            <img src={Half} alt="Half circle" id="h-circle" />
+        
         </section>
          <section id="hero-about1">
                         <div className="container ">
