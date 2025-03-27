@@ -113,7 +113,7 @@ font-family:  'Montserrat';
 padding-left: 20px;
 font-weight: 500;
   }
-  .progress-bar {
+  /* .progress-bar {
     width: 100%;
     height: 10px;
     background: #ddd;
@@ -133,13 +133,13 @@ font-weight: 500;
     font-size: 12px;
     font-weight: bold;
   }
-  
-  .progress-text {
+   */
+  /* .progress-text {
     position: absolute;
     width: 100%;
     text-align: center;
   }
-  
+   */
   .animate {
     transition: width 1.5s ease-in-out;
 }
@@ -171,3 +171,5 @@ font-weight: 500;
     height: 100%;
 }
   }
+
+

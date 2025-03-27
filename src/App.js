@@ -9,6 +9,10 @@ import Portfolio from './Components/Portfolio';
 import OffcanvasExample from './Components/Nav-bar';
 import ProfilePage from './Components/profilePage';
 import Review from './Components/Review';
+
+import UserWayWidget1 from './Components/UserWayWidget';
+import Signup from './Components/Signup';
+import Login from './Components/Login';
 function App() {
   return (
     
@@ -16,6 +20,7 @@ function App() {
       <header>
         <Navbar />
       </header>
+ 
       <Router>
         <Routes>
           <Route path="/" element={<Landingpage />} />
@@ -25,8 +30,12 @@ function App() {
           <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/profile/:teamMemberId' element={<ProfilePage />} />
           <Route path='/review/:name' element={<Review />} />
+          <Route path='/sign-up' element={<Signup/>} />
+          <Route path='/sign-in' element={<Login/>} />
         </Routes>
+     
       </Router>
+      <UserWayWidget1 />
     </div>
   );
 }

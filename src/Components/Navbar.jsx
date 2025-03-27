@@ -29,12 +29,12 @@ function Navbar() {
                     <li><a href="/about" className="Links">About</a></li>
                     <li><a href="/Service" className="Links">Services</a></li>
                     <li><a href="/portfolio" className="Links">Portfolio</a></li>
-                    <li><a href="/#Testimonial" className="Links">Testimonial</a></li>
+                    <li><a href="/contact" className="Links">Contact us</a></li>
                 </ul>
             </div>
 
-            <a href="/contact">
-                <button className="btn1233">Contact us</button>
+            <a href="/sign-in">
+                <button className="btn1233">Sign in</button>
             </a>
         </nav>
         </>

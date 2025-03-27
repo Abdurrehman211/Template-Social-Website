@@ -16,6 +16,22 @@
     margin-right: 0;
 
 }
+#hero-about1{
+    /* padding: 10px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/Portfolio.jpg')center center no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+    height: 70vh;
+}
+#hero-about1 .container{
+    margin: 0;
+    z-index: 2;
+}
 #Portfolio h1{
     text-align: left;
     font-size: 50px;
@@ -48,3 +64,114 @@
         margin-right: 0;
     }
 }
+
+#portfolio-Service{
+    padding: 10px;
+    font-family:  'Montserrat';
+  }
+  #portfolio-Service h1{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 128, 0, 0.633);
+
+    padding-left: 10px;
+  }
+  #portfolio-Service p{
+    text-align: justify;
+    font-size: 20px;
+  }
+  /* General container styles */
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Services Wrapper */
+  .services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Service Card */
+  .service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:nth-child(even) {
+    background: #f3f3f3;
+   
+  }
+  /* Two cards per row on medium+ screens */
+  @media (min-width: 768px) {
+    .service-card {
+      width: 48%;
+    }
+  }
+  
+  /* Hover effect */
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Service Title */
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  /* Service List */
+  .service-list {
+    list-style: disc;
+    text-align: left;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  /* Service List Item */
+  .service-item {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+
+
+
+/* WIDGET USER WAY */
+/* Ensure the widget appears at the bottom-right */
+.userway-widget-placeholder {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  /* Adjust widget styling if needed */
+  #userwayAccessibilityWidget {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+  }
+  

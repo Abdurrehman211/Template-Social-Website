@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.uwaw-footer__i {
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  opacity: 0;
+}

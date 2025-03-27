@@ -20,7 +20,7 @@
     background: linear-gradient(to right, #4caf50, #00a3e1);
     color: white;
     border-radius: 10px;
-    height: 300px; /* Increased height to accommodate image */
+ /* Increased height to accommodate image */
     display: flex;
     flex-direction: column;
     justify-content: center;
