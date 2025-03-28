@@ -4,6 +4,9 @@ font-size: 56px;
 font-weight: 700;
 line-height: 68.26px;
 text-align: center;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
 }
 #Contact-col h1{
     font-family: Montserrat;
@@ -11,6 +14,9 @@ font-size: 56px;
 font-weight: 700;
 line-height: 68.26px;
 text-align: center;
+position: relative;
+z-index: 2;
+color: aliceblue;
 }
 #Form{
     padding-top: 50px;
@@ -25,6 +31,25 @@ text-align: center;
     line-height: 65.83px;
     text-align: left;
     
+}
+#Contact{
+    padding: 20px;
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/porfolio5.png')center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    position: relative;
+}
+#Contact .container{
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
 }
 #Form-col h1{
     font-family: Montserrat;
@@ -42,6 +67,10 @@ line-height: 24px;
 letter-spacing: 0.01em;
 text-align: left;
 }
+#Form-col p{
+    font-size: 20px;
+
+}
 #Form-col form{
     width: 100%;
     text-align: center;
@@ -51,12 +80,13 @@ text-align: left;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid black;
 }
-#Form-col form select{
+#Form-col form textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-
+    border: 1px solid black;
 }
 #Form-col form button{
     width: 100%;
@@ -78,28 +108,34 @@ text-align: left;
 #icons1{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     padding: 0px ;
 }
 #icons{
-    width: 30%;
+    width: 95%;
+    margin-bottom: 20px;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 text-align: center;
 }
+.text-emd{
+    margin-left: 20px;
+    font-size: 18px;
+}
 #phone {
-    width: 28px;
-    height: 28px;
-    margin: auto;
+    width: 40px;
+    height: 40px;
+  
 }
 #icons p {
-    font-size: 10px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     text-align: left;
     height: 17px;
+    margin-bottom: 5px;
 }
 
 #nothing {
@@ -150,6 +186,24 @@ text-align: center;
         text-align: left;
         margin-bottom: 50px;
     }
+    #icons {
+        width: 75%;
+        display: flex
+    ;
+        text-align: center;
+        justify-content: center;
+    }
+    #icons1 {
+        margin-top: 20px;
+        display: flex
+    ;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     #Form-col {
         font-family: Montserrat;
         font-size: 14px;
@@ -163,10 +217,28 @@ text-align: center;
         /* height: 147px; */
         position: relative;
         left: 0;
+        top: -20px;
         /* margin-top: -248px; */
         /* top: 1028px; */
         display: block;
         width: 150px;
         height: 150px;
     }
+}
+#Contact-text {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+#Contact-text h1{
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(67, 101, 255);
+}
+#Contact-text p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 18px;
 }

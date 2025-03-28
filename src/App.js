@@ -13,6 +13,7 @@ import Review from './Components/Review';
 import UserWayWidget1 from './Components/UserWayWidget';
 import Signup from './Components/Signup';
 import Login from './Components/Login';
+import Admin from './Components/Admin';
 function App() {
   return (
     
@@ -32,6 +33,7 @@ function App() {
           <Route path='/review/:name' element={<Review />} />
           <Route path='/sign-up' element={<Signup/>} />
           <Route path='/sign-in' element={<Login/>} />
+          <Route path='/admin' element={<Admin/>} />
         </Routes>
      
       </Router>

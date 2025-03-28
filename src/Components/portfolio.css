@@ -155,7 +155,21 @@
     margin-bottom: 5px;
   }
   
-
+@media screen and (max-width: 768px) {
+  #hero-about1 {
+    /* padding: 10px; */
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    background: url(http://localhost:3000/static/media/Portfolio.a345100….jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+    height: 100%;
+}
+}
 
 
 /* WIDGET USER WAY */

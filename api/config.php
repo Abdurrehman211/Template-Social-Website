@@ -9,10 +9,19 @@ header("Content-Type: application/json");
 // define('DB_PASS', '');
 // define('DB_NAME', 'donation');
 
+// LOCAL HOST SERVING
+
 $host="localhost";
 $user="root";
 $pass="";
 $db="triodevelopers";
+
+//HOSTINGER SERVING
+
+// $host="localhost";
+// $user="u283173657_Zoro";
+// $pass="Swistan@12";
+// $db="u283173657_triodevelopers";
 
 // Create Connection
 // $connection = mysqli_connect($host, $user, $pass, $db);
@@ -25,4 +34,8 @@ $connection = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
 // else{
 //      echo "Connected successfully";
 // }
+
+//u283173657_Zoro
+//Swistan@12
+//u283173657_triodevelopers
 ?>
