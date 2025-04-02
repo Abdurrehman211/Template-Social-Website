@@ -100,3 +100,32 @@ margin-bottom: 30px;
     text-decoration: underline;
     font-style: italic;
 }
+@media screen and (max-width: 800px) {
+    #Signup{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+       flex-direction: column;
+        font-family: 'Montserrat';
+    }
+    .signup-img {
+        margin-top: 50px;
+        height: 95%;
+        justify-content: flex-end;
+        width: 95%;
+    }
+    .signup-text {
+        height: 100%;
+        width: 95%;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    #Signup{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+       flex-direction: column;
+        font-family: 'Montserrat';
+    }
+}

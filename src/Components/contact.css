@@ -204,6 +204,14 @@ text-align: center;
         flex-wrap: wrap;
         flex-direction: column;
     }
+    #icons {
+        display: flex
+;
+        justify-content: center;
+        text-align: center;
+        width: 75%;
+        flex-wrap: wrap;
+    }
     #Form-col {
         font-family: Montserrat;
         font-size: 14px;

@@ -125,7 +125,7 @@ export default function About() {
                               </p>
                             </div>
                             <div className="col-sm-12 col-md-12 col-lg-5 my-5 ">
-                            <img src={image} alt="logo" id="logo" />
+                            <img src={image} alt="logo" width={'95%'} height={'95%'} />
                             </div>
                         </div>
                         <div className="row mt-4">

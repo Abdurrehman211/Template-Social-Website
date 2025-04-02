@@ -264,7 +264,7 @@ useEffect(() => {
                 <div className="container">
                     <img src={Half} alt="Half" id="Half" />
                     <div className="row" id="Project-row">
-                        <div className="col-lg-6 col-md-6 col-sm-12" id="picture" data-aos="fade-up">
+                        <div className="col-lg-6 col-md-12 col-sm-12 mb-5" id="picture" data-aos="fade-up">
                             <div className="rect1" data-aos="fade-up">
                                 <img src={Rectangle1} alt="Woman" id="rect" />
                             </div>
@@ -273,7 +273,7 @@ useEffect(() => {
                             </div>
 
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12" id='Text1' data-aos="fade-up">
+                        <div className="col-lg-6 col-md-12 col-sm-12" id='Text1' data-aos="fade-up">
                             <h1>Project We <br /> Have <span style={{ color: 'cornflowerblue' }}>Completed</span></h1>
                             <p id="p">
                                 At Trio Developers, we are passionate about blending creativity with strategy to elevate brands. Our team of experts combines innovative design with data-driven insights to deliver exceptional digital solutions tailored to your unique needs.
@@ -319,7 +319,7 @@ useEffect(() => {
             <section id="Testimonial" data-aos="fade-up">
                 <Testimonial />
             </section>
-            <br /><br />
+         
             <footer>
                <Footer/>
             </footer>

@@ -148,7 +148,7 @@ function Portfolio(){
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                <a href="/"><img src={image} alt="logo" id="logo" /></a>
+                <a href="/"><img src={image} alt="logo" width={'95%'} height={'95%'} /></a>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
                     <h1>

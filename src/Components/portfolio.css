@@ -63,6 +63,9 @@
         margin-left: 0;
         margin-right: 0;
     }
+    #Portfolio{
+      height: 100vh;
+    }
 }
 
 #portfolio-Service{
@@ -163,14 +166,37 @@
 ;
     align-items: center;
     justify-content: center;
-    background: url(http://localhost:3000/static/media/Portfolio.a345100….jpg) center center no-repeat;
+    background: url('./images/Portfolio.jpg')center center no-repeat ;
     background-attachment: fixed;
     background-size: cover;
     height: fit-content;
     height: 100%;
 }
+#Portfolio h1 {
+  text-align: left;
+  font-size: 60px;
+  z-index: 2;
+  position: relative;
+  color: aliceblue;
 }
-
+}
+@media screen and (max-width:500px){
+  #hero-about1{
+    /* padding: 10px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/Portfolio.jpg')center center no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+    height: 100%;
+}
+#Portfolio{
+  height: 100%;
+}
+}
 
 /* WIDGET USER WAY */
 /* Ensure the widget appears at the bottom-right */
