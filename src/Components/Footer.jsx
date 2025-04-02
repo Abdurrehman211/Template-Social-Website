@@ -61,7 +61,7 @@ const Footer = () => {
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <a href="https://maps.app.goo.gl/6bwgukfY13T8e6By5" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" , color: "white"}}><i className="fas fa-home mr-3" style={{marginRight: "10px"}}></i> 744 Southcross Dr W suite 204
                 Burnsville Mn 55306</a><br /><br />
-                <a href="mailto:info.triodevelopers@gmail.com " target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" , color: "white"}}><i className="fas fa-envelope mr-3" style={{marginRight: "10px"}}></i>info.triodevelopers@gmail.com</a><br /><br />
+                <a href="mailto:info.triodevelopers@gmail.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" , color: "white"}}><i className="fas fa-envelope mr-3" style={{marginRight: "10px"}}></i>info.triodevelopers@gmail.com</a><br /><br />
                 <a href="tel:952-500-9407" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" , color: "white"}}><i className="fas fa-phone mr-3" style={{marginRight: "10px"}}></i> 10000000</a><br /><br />
                 <a href="tel:952-444-2359" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" , color: "white"}}><i className="fas fa-print mr-3" style={{marginRight: "10px"}}></i> 100000000</a>
               </div>
