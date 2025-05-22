@@ -28,7 +28,7 @@ function Navbar() {
                 <ul>
                     <li><a href="/about" className="Links">About</a></li>
                     <li><a href="/Service" className="Links">Services</a></li>
-                    <li><a href="/portfolio" className="Links">Portfolio</a></li>
+                    <li disabled><a href="/portfolio" className="Links" style={{color:'gray', cursor:"not-allowed"}} disabled>Portfolio</a></li>
                     <li><a href="/contact" className="Links">Contact us</a></li>
                 </ul>
             </div>

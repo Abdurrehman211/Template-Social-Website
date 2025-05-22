@@ -9,6 +9,18 @@ import circle from './images/circle.png';
 import Unknown from './images/unknown.png';
 import NewsTicker from "./marequee.jsx";
 export default function Services() {
+
+    const Locker=()=>{
+        alert("To access this, A key is required Contact us for our Services!");
+        let a = prompt("Enter the key");
+        if(a == "trioDevs"){
+            window.location.href= "/portfolio";
+        }
+        else{
+            alert("invalid key!")
+        }
+    }
+
 return (
     <>
     <section id="M-Services">
@@ -75,7 +87,7 @@ return (
                     By blending cutting-edge technology with creative design, we develop responsive and scalable websites that perform seamlessly across all devices. From startups to enterprises, our tailored web solutions empower businesses to thrive in the digital landscape.                    </p>
                     <p>
                     Fueled by innovation and expertise, we transform ideas into high-performing websites that engage users and drive success.                    </p>
-                    <button className="btn btn-primary" onClick={() => window.location.href = '/portfolio'}>
+                    <button className="btn btn-primary" onClick={Locker}>
                         Showcase
                     </button>
                 </div>
